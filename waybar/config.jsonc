@@ -104,8 +104,10 @@
   },
   "clock": {
     // "timezone": "America/New_York",
+    "format": "{:%H:%M}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}",
+    "on-click": "",
+    /*"format-alt": "{:%Y-%m-%d}",*/
   },
   "cpu": {
     "format": "{usage}% ",
@@ -137,7 +139,7 @@
     "format-full": "{capacity}% {icon}",
     "format-charging": "{capacity}% ",
     "format-plugged": "{capacity}% ",
-    "format-alt": "{time} {icon}",
+    /*"format-alt": "{time} {icon}",*/
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
     "format-icons": ["", "", "", "", ""],
@@ -184,7 +186,7 @@
       "car": "",
       "default": ["", "", ""],
     },
-    "on-click": "pavucontrol",
+    "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
   },
   "custom/media": {
     "format": "{icon} {text}",
